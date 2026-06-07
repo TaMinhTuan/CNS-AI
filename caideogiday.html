@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kỹ Năng Số - Tạ Minh Tuấn</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #1abc9c;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+        header p { margin: 0; font-size: 1.2rem; color: #bdc3c7; }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--secondary-color); }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            scroll-margin-top: 80px;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .highlight-box {
+            background: #e8f8f5;
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+            margin: 15px 0;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .project-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+        }
+        .project-content strong {
+            color: #2c3e50;
+        }
+        .product-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .product-link:hover {
+            background-color: #16a085;
+        }
+        .summary-quote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 20px;
+            margin: 20px 0;
+            background-color: #fcfcfc;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tạ Minh Tuấn</h1>
+        <p>Portfolio Môn học: Nhập môn công nghệ số và ứng dụng Trí tuệ nhân tạo</p>
+    </header>
+
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#du-an">Trang Dự án</a>
+        <a href="#tong-ket">Tổng kết</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="gioi-thieu" class="section">
+            <h2>1. Về bản thân</h2>
+            <div class="intro-grid">
+                <p>Chào mọi người! Mình là <strong>Tạ Minh Tuấn</strong>, hiện đang là sinh viên chuyên ngành Khoa học Máy tính / Công nghệ Thông tin. Ngoài những giờ học thuật toán hay kiến trúc máy tính trên giảng đường, mình có niềm đam mê đặc biệt với Lập trình thi đấu (Competitive Programming) và thường xuyên rèn luyện tư duy logic trên nền tảng Codeforces.</p>
+                <p>Bên cạnh code, mình thích tự tay viết các mod cho game Minecraft (chuẩn hệ sinh thái Fabric), theo dõi cuồng nhiệt các trận túc cầu của Arsenal, và duy trì thói quen tập luyện Shadowboxing để giữ sự nhạy bén và cân bằng thể lực.</p>
+                
+                <div class="highlight-box">
+                    <strong>Định hướng phát triển:</strong> Mình đang rèn luyện nền tảng toán học và kỹ thuật để hướng tới vị trí Data Scientist. Mục tiêu dài hạn của mình là ứng dụng các mô hình học máy để giải quyết các bài toán dữ liệu lớn, đồng thời đào sâu nghiên cứu để có cơ hội công bố các bài báo khoa học chuẩn quốc tế và theo đuổi con đường cao học.
+                </div>
+                
+                <p><strong>Mục tiêu của Portfolio này:</strong> Trang web được tạo ra không chỉ để "Lưu trữ sản phẩm cá nhân để dễ dàng truy cập và chia sẻ", mà còn là minh chứng trực quan nhất cho sự trưởng thành của mình trong việc tiếp nhận các kỹ năng số, cách sử dụng AI có trách nhiệm và tư duy làm việc chuyên nghiệp trên môi trường mạng thông qua học phần UET.A13.</p>
+            </div>
+        </section>
+
+        <section id="du-an" class="section">
+            <h2>2. Các dự án đã hoàn thành</h2>
+            <p>Dưới đây là tổng hợp 7 bài tập lớn trong khóa học, minh chứng cho quá trình rèn luyện kỹ năng số và ứng dụng Trí tuệ nhân tạo của bản thân.</p>
+            
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 1: Máy tính và thiết bị ngoại vi</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Làm chủ các kiến thức nền tảng về cấu trúc máy tính, nguyên lý hoạt động của hệ điều hành, mạng và các chuẩn kết nối.</p>
+                            <p><strong>Thực hiện:</strong> Tìm hiểu cấu trúc phần cứng, phân biệt vai trò của các linh kiện, thực hành quản lý thư mục, file và bảo mật cá nhân.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1NUD79385VD6Sx6ng7W7E8BrPlFkGmNTU/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 1</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 2: Khai thác dữ liệu & thông tin</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Rèn luyện kỹ năng tìm kiếm nâng cao, đánh giá độ tin cậy của thông tin trên mạng.</p>
+                            <p><strong>Thực hiện:</strong> Áp dụng tiêu chí CRAP (Độ mới, Độ tin cậy, Thẩm quyền, Mục đích) để phân tích thông tin và thực hành trích dẫn chuẩn xác.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1MkOP4kd3I7j9YtTOTQoDTzUca6yhG0A7/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 2</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 3: Tổng quan về trí tuệ nhân tạo</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Hiểu rõ khái niệm cốt lõi của AI, rèn luyện kỹ năng đặt câu lệnh (Prompt Engineering).</p>
+                            <p><strong>Thực hiện:</strong> Tương tác với các mô hình AI tạo sinh, thử nghiệm kỹ thuật viết prompt để tối ưu hóa kết quả đầu ra cho các bài toán cụ thể.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1KFIwpLTEIXwurVLzwVjq6SUIjepwrA3n/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 3</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 4: Giao tiếp & Hợp tác môi trường số</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Vận dụng các công cụ giao tiếp số chuyên nghiệp và quy tắc ứng xử trên mạng (Netiquette).</p>
+                            <p><strong>Thực hiện:</strong> Thiết lập không gian làm việc nhóm trực tuyến, ứng dụng công cụ hỗ trợ giao tiếp và tổ chức làm việc hiệu quả.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1iD_ODM1NoevSIfoGshmaUCx994YXQEKE/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 4</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 5: Sáng tạo nội dung số</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Nắm bắt quy trình sáng tạo, sử dụng các công cụ số và AI hỗ trợ thiết kế có đạo đức.</p>
+                            <p><strong>Thực hiện:</strong> Lên ý tưởng, kịch bản và thực hành thiết kế, trình bày thông tin trực quan thông qua các công cụ đa phương tiện.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/10lWtUE0NA1gxuqYM4q1JcK3kpmfEaNXh/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 5</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 6: An toàn và Liêm chính học thuật</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Nhận diện rủi ro an toàn thông tin, tuân thủ nguyên tắc liêm chính học thuật và phòng chống đạo văn.</p>
+                            <p><strong>Thực hiện:</strong> Xử lý các tình huống giả định về an ninh mạng và xác định giới hạn đạo đức khi sử dụng AI trong học thuật.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1EyFyNhUCZrj8UF0bSRcXfcbc-fSvdCGb/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 6</a>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Tuần 7: Công nghệ nổi bật & Tương lai</div>
+                        <div class="project-content">
+                            <p><strong>Mục tiêu:</strong> Đánh giá tổng quan về sự phát triển của các công nghệ mới nổi (Module 7A) và ứng dụng thực tiễn.</p>
+                            <p><strong>Thực hiện:</strong> Phân tích xu hướng công nghệ, hoàn thành các bài đánh giá tổng hợp để khép lại chuỗi kỹ năng số cơ bản.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1kasolgOzp7M6fQrmf7mnj3uuwLjzeAuQ/view?usp=drive_link" class="product-link" target="_blank">🔗 Xem minh chứng Tuần 7</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="tong-ket" class="section">
+            <h2>3. Tổng kết hành trình</h2>
+            
+            <div class="summary-quote">
+                "Hành trình với môn học 'Nhập môn công nghệ số và ứng dụng AI' mang lại cho mình nhiều góc nhìn mới mẻ và thực tế. Ban đầu, mình từng nghĩ một sinh viên IT, vốn đã quen thuộc với code, thuật toán hay việc mày mò các hệ thống máy tính, thì kỹ năng số chỉ là chuyện 'nhỏ như con thỏ'. Nhưng khóa học đã chứng minh điều ngược lại: Biết dùng công nghệ là một chuyện, dùng nó sao cho chuyên nghiệp, hiệu quả và có đạo đức lại là một câu chuyện hoàn toàn khác."
+            </div>
+
+            <ul>
+                <li><strong>Kiến thức và Kỹ năng quan trọng nhất:</strong> Kỹ năng quý giá nhất mình thu nạp được không phải là thao tác với một phần mềm mới, mà là <strong>tư duy ứng xử trong môi trường số</strong>. Từ việc đánh giá thông tin bằng nguyên tắc CRAP, nghệ thuật đặt câu lệnh (Prompt Engineering) với AI, cho đến việc hiểu rõ ranh giới của liêm chính học thuật. Những điều này giúp mình chuyển từ việc "dùng AI như một cỗ máy tìm kiếm" sang "hợp tác với AI như một trợ lý nghiên cứu đắc lực".</li>
+                <li><strong>Điểm tâm đắc nhất:</strong> Việc xây dựng Portfolio này giúp mình có cơ hội hệ thống hóa lại chuỗi bài tập đã làm. Nó giống như việc mình tự thiết kế một hệ thống lưu trữ dữ liệu cá nhân tối ưu vậy, giúp nhìn nhận rõ rệt sự tiến bộ của bản thân qua từng tuần học.</li>
+                <li><strong>Thách thức gặp phải:</strong> Khó khăn lớn nhất có lẽ là khối lượng tài liệu đọc (Reading materials) đồ sộ trong các bài về An toàn mạng và Đạo đức AI, yêu cầu mình phải thay đổi thói quen đọc lướt để thực sự chiêm nghiệm sâu hơn về các vấn đề liêm chính học thuật và luật bản quyền số.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
